@@ -55,8 +55,8 @@
 }
 .main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .mt-s {
@@ -84,6 +84,9 @@
 .gap-s {
   gap: 0.5rem;
 }
+.gap-m {
+  gap: 1rem;
+}
 .gap-l {
   gap: 2.5rem;
 }
@@ -102,38 +105,76 @@
 .wrap {
   flex-wrap: wrap;
 }
-.bg-1 {
-  background-image: url(assets/iteration-2/cta/kart-1.png);
-  background-size: cover;
-}
-.bg-2 {
-  background-image: url(assets/iteration-2/cta/kart-2.png);
-  background-size: cover;
-}
-.bg-3 {
-  background-image: url(assets/iteration-2/cta/kart-3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .flex-col {
+  display: flex;
   flex-direction: column;
 }
 .absolute {
   position: absolute;
 }
-.relative {
-  position: relative;
-  top: 50px;
-  left: 50px;
-}
 .card-main {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: auto; /* Görsele göre otomatik genişlik */
-  height: auto;
-  aspect-ratio: 1/1;
+  color: white;
+
+  img {
+    border-radius: 12px;
+  }
+
+  h3 {
+    font-family: "Quattrocento";
+    font-weight: 700;
+    font-size: 4.3rem;
+    line-height: 4.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3rem;
+  }
+  p {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+.card-2 {
+  h3 {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  img {
+    border-radius: 12px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.margin-text {
+  margin: 2rem;
+}
+.mb-m {
+  margin-bottom: 1rem;
+}
+.white {
+  color: white;
+}
+.btn-card {
+  color: red;
+  background-color: white;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 3rem;
+  border-radius: 50px;
+  border: none;
+  padding: 0.1rem 2rem;
 }
